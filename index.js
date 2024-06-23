@@ -13,8 +13,8 @@ app.use(
 );
 
 // ROUTES
-const robotRoutes = require("./routes/product.route");
-app.use("/api/product", robotRoutes);
+const ProductRoutes = require("./routes/product.route");
+app.use("/api/products", ProductRoutes);
 
 // START SERVER
 app.listen(PORT, () => {
